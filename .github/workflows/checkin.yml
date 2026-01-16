@@ -2,8 +2,10 @@ name: T00ls 签到
 
 on:
   schedule:
-    # 每天 UTC 0:00 (北京时间 8:00)
-    - cron: '33 6 * * *'
+    # 北京时间 08:00（UTC 00:00）
+    - cron: '0 0 * * *'
+    # 北京时间 20:00（UTC 12:00）
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
